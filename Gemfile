@@ -61,6 +61,7 @@ gem "twitter"
 gem "uglifier"
 gem "validate_url"
 gem "virtus"
+gem "whenever", require: false
 
 source "https://rails-assets.org" do
   gem "rails-assets-angularjs", "~> 1.3.17"
@@ -93,6 +94,11 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller" # better_errorsで使用
   gem "bullet"
+  gem "capistrano"
+  gem "capistrano-bundler"
+  gem "capistrano3-puma"
+  gem "capistrano-rails"
+  gem "capistrano-rbenv"
   gem "letter_opener_web"
   gem "quiet_assets"
   gem "ruby_identicon"
