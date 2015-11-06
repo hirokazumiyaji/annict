@@ -9,7 +9,7 @@ set :deploy_to, "/home/annict"
 set :rails_env, "production"
 set :assets_roles, [:app]
 
-set :puma_conf, "#{current_path}/config/puma.rb"
+set :puma_conf, "#{shared_path}/config/puma.rb"
 
 set :rbenv_type, :system
 set :rbenv_ruby, File.read(".ruby-version").strip
