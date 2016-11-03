@@ -1,0 +1,19 @@
+app:
+  build: .
+  command: bundle exec rails s -b 0.0.0.0
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  links:
+    - db
+db:
+  image: postgres:9.5
+  environment:
+    - POSTGRES_DB=annict_development
+  ports:
+    - "5432:5432"
+redis:
+  image: redis
+  ports:
+    - "6379:6379"

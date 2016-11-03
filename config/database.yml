@@ -14,12 +14,12 @@ default: &default
 development:
   <<: *default
   database: annict_development
-  host: localhost
+  host: db
 
 test:
   <<: *default
   database: annict_test
-  host: localhost
+  host: db
 
 production:
   <<: *default
